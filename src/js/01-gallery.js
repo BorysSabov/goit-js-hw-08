@@ -4,9 +4,6 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 // Change code below this line
-
-console.log(galleryItems);
-
 const addGalleryPic = document.querySelector('.gallery');
 
 const createGalleryEl = galleryItems
@@ -26,7 +23,7 @@ const createGalleryEl = galleryItems
 
 addGalleryPic.innerHTML = createGalleryEl;
 
-let gallery = new SimpleLightbox('.gallery a', {
+new SimpleLightbox('.gallery a', {
   captions: true,
   captionDelay: 250,
   captionsData: 'alt',
